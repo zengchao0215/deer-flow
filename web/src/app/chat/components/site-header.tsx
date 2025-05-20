@@ -16,7 +16,7 @@ export async function SiteHeader() {
           <span className="mr-1 text-2xl">🦌</span>
           <span>DeerFlow</span>
         </div>
-        <div className="relative flex items-center">
+        <div className="relative flex items-center hidden">
           <div
             className="pointer-events-none absolute inset-0 z-0 h-full w-full rounded-full opacity-60 blur-2xl"
             style={{

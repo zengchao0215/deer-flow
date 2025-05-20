@@ -36,13 +36,10 @@ export function Jumbotron() {
           <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
             Deep Research{" "}
           </span>
-          <AuroraText>at Your Fingertips</AuroraText>
+          <AuroraText>深入研究触手可及</AuroraText>
         </h1>
         <p className="max-w-4xl p-2 text-center text-sm opacity-85 md:text-2xl">
-          Meet DeerFlow, your personal Deep Research assistant. With powerful
-          tools like search engines, web crawlers, Python and MCP services, it
-          delivers instant insights, comprehensive reports, and even captivating
-          podcasts.
+          认识一下DeerFlow，您的个人深度研究助理。凭借强大搜索引擎、网络爬虫、Python和MCP服务等工具提供即时见解、全面报告，甚至令人着迷播客。
         </p>
         <div className="flex gap-6">
           <Button className="hidden text-lg md:flex md:w-42" size="lg" asChild>
@@ -56,7 +53,7 @@ export function Jumbotron() {
                   : "/chat"
               }
             >
-              Get Started <ChevronRight />
+              立即开始 <ChevronRight />
             </Link>
           </Button>
           {!env.NEXT_PUBLIC_STATIC_WEBSITE_ONLY && (
@@ -71,14 +68,14 @@ export function Jumbotron() {
                 target="_blank"
               >
                 <GithubFilled />
-                Learn More
+                了解更多
               </Link>
             </Button>
           )}
         </div>
       </div>
       <div className="absolute bottom-8 flex text-xs opacity-50">
-        <p>* DEER stands for Deep Exploration and Efficient Research.</p>
+        <p>* DEER代表深度探索和高效研究。</p>
       </div>
     </section>
   );

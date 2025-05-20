@@ -243,9 +243,9 @@ function ResearchCard({
   const openResearchId = useStore((state) => state.openResearchId);
   const state = useMemo(() => {
     if (hasReport) {
-      return reportGenerating ? "Generating report..." : "Report generated";
+      return reportGenerating ? "正在生成报告..." : "报告已生成";
     }
-    return "Researching...";
+    return "正在深度搜索...";
   }, [hasReport, reportGenerating]);
   const msg = useResearchMessage(researchId);
   const title = useMemo(() => {
@@ -266,7 +266,7 @@ function ResearchCard({
     <Card className={cn("w-full", className)}>
       <CardHeader>
         <CardTitle>
-          <RainbowText animated={state !== "Report generated"}>
+          <RainbowText animated={state !== "报告已生成"}>
             {title !== undefined && title !== "" ? title : "Deep Research"}
           </RainbowText>
         </CardTitle>
@@ -280,7 +280,7 @@ function ResearchCard({
             variant={!openResearchId ? "default" : "outline"}
             onClick={handleOpen}
           >
-            {researchId !== openResearchId ? "Open" : "Close"}
+            {researchId !== openResearchId ? "打开" : "关闭"}
           </Button>
         </div>
       </CardFooter>
@@ -288,7 +288,7 @@ function ResearchCard({
   );
 }
 
-const GREETINGS = ["Cool", "Sounds great", "Looks good", "Great", "Awesome"];
+const GREETINGS = ["太酷了", "听起来很棒", "看起来不错", "太棒了", "很好的"];
 function PlanCard({
   className,
   message,
@@ -317,7 +317,7 @@ function PlanCard({
   const handleAccept = useCallback(async () => {
     if (onSendMessage) {
       onSendMessage(
-        `${GREETINGS[Math.floor(Math.random() * GREETINGS.length)]}! ${Math.random() > 0.5 ? "Let's get started." : "Let's start."}`,
+        `${GREETINGS[Math.floor(Math.random() * GREETINGS.length)]}! ${Math.random() > 0.5 ? "让我们开始吧。" : "我们开始吧。"}`,
         {
           interruptFeedback: "accepted",
         },
@@ -332,7 +332,7 @@ function PlanCard({
             {`### ${
               plan.title !== undefined && plan.title !== ""
                 ? plan.title
-                : "Deep Research"
+                : "深度搜索"
             }`}
           </Markdown>
         </CardTitle>

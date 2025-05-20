@@ -92,7 +92,7 @@ export function ResearchBlock({
                   <Headphones />
                 </Button>
               </Tooltip>
-              <Tooltip title="Edit">
+              <Tooltip title="编辑">
                 <Button
                   className="text-gray-400"
                   size="icon"
@@ -115,7 +115,7 @@ export function ResearchBlock({
               </Tooltip>
             </>
           )}
-          <Tooltip title="Close">
+          <Tooltip title="关闭">
             <Button
               className="text-gray-400"
               size="sm"
@@ -140,10 +140,10 @@ export function ResearchBlock({
                 value="report"
                 disabled={!hasReport}
               >
-                Report
+                报告
               </TabsTrigger>
               <TabsTrigger className="px-8" value="activities">
-                Activities
+                活动记录
               </TabsTrigger>
             </TabsList>
           </div>

@@ -156,7 +156,7 @@ function WebSearchToolCall({ toolCall }: { toolCall: ToolCallRuntime }) {
           animated={searchResults === undefined}
         >
           <Search size={16} className={"mr-2"} />
-          <span>Searching for&nbsp;</span>
+          <span>正在搜索&nbsp;</span>
           <span className="max-w-[500px] overflow-hidden text-ellipsis whitespace-nowrap">
             {(toolCall.args as { query: string }).query}
           </span>
@@ -248,7 +248,7 @@ function CrawlToolCall({ toolCall }: { toolCall: ToolCallRuntime }) {
           animated={toolCall.result === undefined}
         >
           <BookOpenText size={16} className={"mr-2"} />
-          <span>Reading</span>
+          <span>读取中...</span>
         </RainbowText>
       </div>
       <ul className="mt-2 flex flex-wrap gap-4">
@@ -288,7 +288,7 @@ function PythonToolCall({ toolCall }: { toolCall: ToolCallRuntime }) {
           className="text-base font-medium italic"
           animated={toolCall.result === undefined}
         >
-          Running Python code
+          运行Python代码
         </RainbowText>
       </div>
       <div>
@@ -374,7 +374,7 @@ function MCPToolCall({ toolCall }: { toolCall: ToolCallRuntime }) {
                     className="pr-0.5 text-base font-medium italic"
                     animated={toolCall.result === undefined}
                   >
-                    Running {toolCall.name ? toolCall.name + "()" : "MCP tool"}
+                    运行 {toolCall.name ? toolCall.name + "()" : "MCP工具"}
                   </RainbowText>
                 </div>
               </Tooltip>

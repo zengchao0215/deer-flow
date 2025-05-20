@@ -24,3 +24,4 @@ conf.yaml
 # coverage report
 coverage.xml
 coverage/
+.vscode/settings.json

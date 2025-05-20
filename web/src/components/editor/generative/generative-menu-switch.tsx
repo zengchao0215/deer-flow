@@ -51,10 +51,10 @@ const GenerativeMenuSwitch = ({
                   disabled
                 >
                   <Magic className="h-5 w-5" />
-                  Ask AI
+                  询问AI
                 </Button>
               </TooltipTrigger>
-              <TooltipContent>You can't ask AI in replay mode.</TooltipContent>
+              <TooltipContent>你不能在回放模式下询问AI。</TooltipContent>
             </Tooltip>
           ) : (
             <Button
@@ -64,7 +64,7 @@ const GenerativeMenuSwitch = ({
               size="sm"
             >
               <Magic className="h-5 w-5" />
-              Ask AI
+              询问AI
             </Button>
           )}
           {children}

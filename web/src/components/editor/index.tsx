@@ -123,7 +123,7 @@ const ReportEditor = ({ content, onMarkdownChange }: ReportEditorProps) => {
         >
           <EditorCommand className="border-muted bg-background z-50 h-auto max-h-[330px] overflow-y-auto rounded-md border px-1 py-2 shadow-md transition-all">
             <EditorCommandEmpty className="text-muted-foreground px-2">
-              No results
+              没有结果
             </EditorCommandEmpty>
             <EditorCommandList>
               {suggestionItems.map((item) => (

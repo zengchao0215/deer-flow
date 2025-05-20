@@ -101,9 +101,9 @@ export function SettingsDialog() {
       </Tooltip>
       <DialogContent className="sm:max-w-[850px]">
         <DialogHeader>
-          <DialogTitle>DeerFlow Settings</DialogTitle>
+          <DialogTitle>设置</DialogTitle>
           <DialogDescription>
-            Manage your DeerFlow settings here.
+            管理系统参数和配置选项
           </DialogDescription>
         </DialogHeader>
         <Tabs value={activeTabId}>
@@ -157,10 +157,10 @@ export function SettingsDialog() {
         </Tabs>
         <DialogFooter>
           <Button variant="outline" onClick={() => setOpen(false)}>
-            Cancel
+            取消
           </Button>
           <Button className="w-24" type="submit" onClick={handleSave}>
-            Save
+            保存
           </Button>
         </DialogFooter>
       </DialogContent>
